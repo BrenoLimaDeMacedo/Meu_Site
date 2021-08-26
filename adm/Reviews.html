@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="shortcut icon" href="../_img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../_img/logo.png" alt="Minha logo">
+        <h1>Best Review</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Home.html">Inicio:</a>
+                </li>
+                <li>
+                    <a href="#">Todas as Reviews:</a>
+                    <ul>
+                        <li><a href="../Review_TLOU.html">The Last of Us II - Review</a></li>
+                        <li><a href="#">God of War - Review</a></li>
+                        <li><a href="#">GTA 5 - Review</a></li>
+                        <li><a href="#">Celeste - Review</a></li>
+                        <li><a href="#">stardew valley - Review</a></li>
+                        <li><a href="#">Terraria - Review</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Login.html">Login na área de administração:</a>
+                    <ul>
+                        <li><a href="../_adm/Usuarios.html">Usuarios:</a></li>
+                        <li><a href="../_adm/Reviews.html">Reviews</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Autor.html">Autor:</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Cadastro de reviews: </h1>
+            <form method="post" action="cadastro.php" enctype="multipart/form-data">
+                <label>
+                    Titulo:<br>
+                    <input type="text" name="Nome" placeholder="o que a Review irá tratar..."><br>
+                </label>
+                <label>
+                    Nota da critica: <br>
+                    <input type="number" name="Nota da Critica" placeholder="Nota: 100..."><br>
+                </label>
+                <label>
+                    Criador(a): <br>
+                    <input type="text" name="Criador" placeholder="Rockstar Games..."><br>
+                </label>
+                <h4>Categoria:</h4>
+                <label>
+                    Jogos famosos: 
+                    <input type="checkbox" name="jogos famosos"><br>
+                </label>
+                <label>
+                    Jogos indies: 
+                    <input type="checkbox" name="Jogos indies"><br><br>
+                </label>
+                <label>
+                    Resumo:<br>
+                    <input type="text" name="Paragrafo" placeholder="Detalhes sobre o tema..."><br><br>
+                </label>
+                <label>
+                    Imagem do Resumo:<br>
+                    <input type="file" name="imagem"><br>
+                </label>
+                <h4>Historia:</h4>
+                <label>
+                    1° paragrafo:<br>
+                    <input type="text" name="Paragrafo" placeholder="Detalhes sobre o tema..."><br><br>
+                </label>
+                <label>
+                    1° imagem:<br>
+                    <input type="file" name="imagem"><br><br>
+                </label>
+                <label>
+                    2° paragrafo:<br>
+                    <input type="text" name="Paragrafo" placeholder="Detalhes sobre o tema..."><br><br>
+                </label>
+                <label>
+                    2° imagem:<br>
+                    <input type="file" name="imagem"><br><br>
+                </label>
+                <label>
+                    3° paragrafo:<br>
+                    <input type="text" name="Paragrafo" placeholder="Detalhes sobre o tema..."><br><br>
+                </label>
+                <label>
+                    3° imagem:<br>
+                    <input type="file" name="imagem"><br><br>
+                </label>
+                <input type="submit" value="Confirmar Cadastro"><br><br>
+            </form>
+        </section>
+        <section>
+            <h1>tabela dos cadastro:</h1>
+            <table border="2">
+                <tr>
+                    <th>Titulo</th>
+                    <th>Categoria</th>
+                    <th>Nota</th>
+                    <th>Criador</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>The Last os Us II</td>
+                    <td>Jogos famosos</td>
+                    <td>93</td>
+                    <td>Naughty Dog</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>God of War</td>
+                    <td>Jogos famosos</td>
+                    <td>94</td>
+                    <td>Santa Monica</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GTA V</td>
+                    <td>Jogos famosos</td>
+                    <td>97</td>
+                    <td>Rockstar Games</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Celeste</td>
+                    <td>Jogos indies</td>
+                    <td>92</td>
+                    <td>Matt Makes Games Inc.</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stardew Valley</td>
+                    <td>Jogos indies</td>
+                    <td>89</td>
+                    <td>Eric Barone concernedApe</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terraria</td>
+                    <td>Jogos indies</td>
+                    <td>83</td>
+                    <td>Re-Logic</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        Copyrite <a href="../Autor.html">Breno Lima</a>
+    </footer>
+</body>
+</html>
