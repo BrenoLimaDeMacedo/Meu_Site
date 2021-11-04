@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+header {
+    font-family:monospace;
+    font-size: 28px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    color:rgb(255, 255, 255);
+    background-color: rgb(137, 0, 172);
+}
+
+header img {
+    padding-top: 10px;
+}
+
+#img {
+    width: 35px;
+    height: 35px;
+}
+
+h1 {
+    border-style:  rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}
+
+#menu {
+    width: 40%;
+    margin: 0; padding: 0;
+}
+
+#menu li a {
+    display: block;
+}
+
+#menu ul li {
+    background: rgb(255, 166, 0);
+    margin: 1px; padding: 5px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#menu li:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#menu li:hover ul {
+    background: rgb(172, 132, 0);
+    font-weight:bold;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+#menu li ul {
+    display: none;
+}
+
+#menu ul li {
+    display: relative;
+}
+
+#menu li:hover ul {
+    padding: 5px;
+    display: relative;
+}
+
+#menu a {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 14px;
+    color:rgb(0, 0, 0);
+}
+
+.material-icons {
+    color: black;
+    padding-top: 20px;
+}
+
+#menunav,.fechar {
+    display: none;
+}
+
+@media screen {
+    nav {
+        display: none;
+    }
+    input:checked ~ nav {
+        display: block;
+    }
+    input:checked ~ .material-icons {
+        display: none;
+    }
+    input:checked ~ .fechar {
+        display: block;
+    }
+}
+
+#famosos {
+    font-family:monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(137, 0, 172);
+    padding: 15px;
+}
+
+#indies {
+    font-family:monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(137, 0, 172);
+    padding: 15px;
+}
+
+#titulos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#coluna article {
+    padding: 0px;
+    margin: 10px;
+}
+
+#coluna {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+#coluna2 article {
+    padding: 0px;
+    margin: 10px;
+}
+
+#coluna2 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.review {
+    width: 20%;
+    min-width: 280px;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#TLOU {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#TLOU:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#GoW {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#GoW:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#GTA {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#GTA:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#celeste {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#celeste:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#SV {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#SV:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+#terraria {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(255, 166, 0);
+}
+
+#terraria:hover {
+    background: rgb(248, 211, 0);
+    transition-duration: 0.5s;
+}
+
+footer {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    background: black;
+    color: rgb(255, 255, 255);
+    border-radius:3px;
+}
+
+footer a:hover {
+    background: red;
+    transition-duration: 0.5s;
+}
+
+#lastofus {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background: rgb(255, 166, 0);
+}
+
+#lastofus li span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#lastofus li {
+    padding: 10px;
+}
+
+#lastofus a {
+    color: black;
+    text-decoration: none;
+}
+
+#lastofus a:hover {
+    color: red;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#reviewTLOU {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reviewTLOU p {
+    font-size: 18px;
+}
+
+#historia {
+    background: purple;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#reviewTLOU img {
+    width: 100%;
+    height: 100%;
+}
+
+#senhas {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+fieldset {
+    border: 2px solid purple;
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 8px;
+    background: purple;
+    color: white;
+}
+
+.bloco {
+    position: relative;
+}
+
+.input {
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 100%;
+}
+
+.labelLog {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input:focus ~ .labelLog, .input:valid + .labelLog{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: -20px;
+    font-size: 12px;
+    color:orange;
+}
+
+#submit {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background: purple;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: rgb(92, 0, 92);
+}
